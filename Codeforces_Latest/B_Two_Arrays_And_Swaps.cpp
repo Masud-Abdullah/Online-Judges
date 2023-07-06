@@ -68,6 +68,7 @@ int main()
         {
             sum += a[i];
         }
+
         cout << sum << nl;
     }
     return 0;
