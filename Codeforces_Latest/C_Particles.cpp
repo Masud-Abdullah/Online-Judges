@@ -70,5 +70,6 @@ int main()
         }
         cout << max(sum1, sum2) << nl;
     }
+    
     return 0;
 }
