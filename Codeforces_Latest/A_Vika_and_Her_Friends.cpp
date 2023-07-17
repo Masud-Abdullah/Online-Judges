@@ -40,3 +40,16 @@ int main()
     }
     return 0;
 }
+/*
+Jahin vai:
+Accha ekhane kahini hocche even odd cell er
+Ekta cell jodi 2 2 hoy
+Etake bole even cell karon 2+2 =4 jeta even
+To dekho 2 2 theke koi koi jaoa jay
+2 1, 1 2, 2 3, 3 2
+Ei 4 jaygay jaoa jay
+Kheal kore dekho 4 tai odd cell
+Eki bhabe tumi odd cell gula theke move korle even cell e chole jaba
+
+-->> tar mane jodi x+y ar a+b er pairity same hoy taile dhore felbe else dhorte parbe na.
+*/
