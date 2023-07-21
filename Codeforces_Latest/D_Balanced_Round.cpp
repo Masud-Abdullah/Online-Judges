@@ -78,7 +78,6 @@ int main()
                 }
             }
         }
-
         ans = max(cnt, ans);
 
         cout << n - ans - 1 << nl;
