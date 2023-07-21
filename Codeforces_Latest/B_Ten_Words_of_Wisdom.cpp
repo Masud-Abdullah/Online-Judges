@@ -63,6 +63,7 @@ int main()
                 }
             }
         }
+        
         cout << x << nl;
     }
     return 0;
