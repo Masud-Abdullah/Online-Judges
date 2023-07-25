@@ -83,6 +83,7 @@ int main()
             cout << x << nl;
             cout << s << nl;
         }
+        
     }
     return 0;
 }
