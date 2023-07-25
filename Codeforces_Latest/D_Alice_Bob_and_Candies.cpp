@@ -63,6 +63,7 @@ int main()
             }
             cnt++;
         }
+        
         cout << cnt << " " << al << " " << bb << nl;
     }
     return 0;
