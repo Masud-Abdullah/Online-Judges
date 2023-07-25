@@ -66,6 +66,7 @@ int main()
                 continue;
             }
         }
+        
 
         if ((n % 2 == 0 && k % 2 == 0) || (n % 2 && k % 2))
         {
@@ -99,6 +100,7 @@ int main()
         }
         else
             nn;
+
     }
     return 0;
 }
