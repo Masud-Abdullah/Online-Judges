@@ -36,5 +36,8 @@ int main()
 
     cout << ans / 2 << '\n';
 
+
+    
+
     return 0;
 }
