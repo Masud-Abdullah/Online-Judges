@@ -26,7 +26,25 @@ int main()
         cin >> a[i];
 
     sort(a, a + n);
-    ll dif = (a[0] + a[n - 1]) / 2;
+    ll ans = 0;
+    for (int i = 0, j = n - 1; i < j; i++, j--)
+    {
+        ans += ((a[j] - a[i]) / 2);
+        // cout<<((a[j]-a[i])/2)<<" ";
+    }
+    // cout<<nl;
+
+    cout << ans << nl;
+
+    // for(int i=0;i<n;i++)
+    // {
+    //     cout<<a[i]<<" ";
+    // }
+    // cout<<nl;
+    return 0;
+}
+/*
+ll dif = (a[0] + a[n - 1]) / 2;
     ll ans = abs(dif - a[0]) + abs(a[n - 1] - (dif + 1));
     // cout << ans<< '\n';
     for (int i = 1; i < n - 1; i++)
@@ -35,9 +53,4 @@ int main()
     }
 
     cout << ans / 2 << '\n';
-
-
-    
-
-    return 0;
-}
+*/
