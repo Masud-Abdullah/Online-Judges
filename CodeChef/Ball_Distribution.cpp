@@ -54,9 +54,11 @@ int main()
                 cnt++;
         }
 
-        sort(a,a+m);
-        if(m<=n)cout<<cnt<<nl;
-        else cout<<((m/n)*a[0])<<nl;
+        sort(a, a + m);
+        if (m <= n)
+            cout << cnt << nl;
+        else
+            cout << ((m / n) * a[0]) << nl;
     }
     return 0;
 }
