@@ -21,7 +21,7 @@ int main()
             }
             sort(a[i].begin(), a[i].end());
         }
-
+        
         long long sum = 0;
         int mn = INT_MAX;
         for (int i = 1; i <= n; i++)
