@@ -124,6 +124,7 @@ int main()
                 cout << x[i] << " ";
             }
             cout << nl;
+            
             for (int i = 0; i < sz(y); i++)
             {
                 cout << y[i] << " ";
