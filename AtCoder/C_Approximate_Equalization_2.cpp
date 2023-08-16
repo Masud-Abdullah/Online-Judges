@@ -32,7 +32,9 @@ int main()
         ans += ((a[j] - a[i]) / 2);
         // cout<<((a[j]-a[i])/2)<<" ";
     }
-    // cout<<nl;
+    cout<<nl;
+
+
 
     cout << ans << nl;
 
