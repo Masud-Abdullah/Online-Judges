@@ -77,5 +77,6 @@ int main()
             cnt++;
     }
     cout << cnt << nl;
+
     return 0;
 }
