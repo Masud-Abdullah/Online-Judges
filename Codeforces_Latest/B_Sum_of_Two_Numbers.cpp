@@ -81,6 +81,7 @@ int main()
             cout << x << " " << y << nl;
         }
     }
+    
     return 0;
 }
 
