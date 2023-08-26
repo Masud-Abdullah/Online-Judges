@@ -63,20 +63,42 @@ using namespace std;
 int main()
 {
     FIO;
-    ll t;
+    int t;
     cin >> t;
     while (t--)
     {
-        ll n;
-        cin >> n;
-        ll a[n];
-        for (int i = 0; i < n; i++)
-            cin >> a[i];
-
-        sort(a,a+n,greater<int>());
-
-        if(a[0]>=n)YY;
-        else NN;
+        int x, y;
+        cin >> x >> y;
+        string s;
+        cin >> s;
+        sort(all(s));
+        string ans = "";
+        if (x % 2 && y % 2)
+        {
+            for (int i = 0; i < x; i++)
+            {
+                if (i == x / 2)
+                {
+                    ans += s[x / 2 + 1];
+                }
+                else if (i == x / 2 + 1)
+                {
+                    ans += s[x / 2];
+                }
+                else
+                    ans += s[i];
+            }
+            cout << ans << nl;
+        }
+        else
+            cout << s << nl;
+        // if(x%2 && y%2)
+        // {
+        //     char a=s[x/2];
+        //     char b=s[x/2+1];
+        //     s[x/2]=a;
+        //     s[x/2+1]=b;
+        // }
     }
     return 0;
 }
