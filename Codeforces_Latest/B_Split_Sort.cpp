@@ -1,3 +1,5 @@
+//-------------------Amar Code------------------
+
 // #include <bits/stdc++.h>
 // #define nl "\n"
 // #define NN (cout << "NO\n")
@@ -85,5 +87,6 @@ int main()
         }
         cout << count << endl;
     }
+    
     return 0;
 }
