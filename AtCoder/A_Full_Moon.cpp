@@ -8,5 +8,6 @@ int main()
         cout << 0 << endl;
     else
         cout << (n - m) / p + 1 << endl;
+        
     return 0;
 }
