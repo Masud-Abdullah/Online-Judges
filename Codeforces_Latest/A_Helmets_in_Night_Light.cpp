@@ -30,24 +30,6 @@
     cin.tie(0);                   \
     cout.tie(0);
 using namespace std;
-ll cnt, ex, xe;
-ll ans(ll n, ll m)
-{
-    xe++;
-    if (xe == 60)    //Jehetu complexity logN tai maximum 60 ta step holei cnt 10^18 hoye jabe. 
-        return -1;   // Ar I hope ans eto boro hobe na tai ekhane 60 er beshi hole recursion off kore disi.
-
-    while (n < m)
-    {
-        cnt += (n);
-        n *= 2;
-    }
-
-    if (n % m == 0)
-        return cnt;
-    else
-        ans((n % m), m);
-}
 int main()
 {
     FIO;
@@ -55,20 +37,43 @@ int main()
     cin >> t;
     while (t--)
     {
-        ll n, m;
-        cin >> n >> m;
-        if (n % m == 0)
-            cout << 0 << nl;
-        else if (m % 2)
-            cout << -1 << nl;
+        ll n, p;
+        cin >> n >> p;
+        ll ans = p, tr = 1;
+        pll a[n];
+        for (int i = 0; i < n; i++)
+            cin >> a[i].second;
+
+        for (int i = 0; i < n; i++)
+            cin >> a[i].first;
+        sort(a, a + n);
+
+        if (p <= a[0].first)
+            cout << n * p << nl;
         else
         {
-            ll xt = n % m;
-            cnt = 0;
-            ex = 0;
-            xe = 0;
-            ll x = ans(xt, m);
-            cout << x << nl;
+            for (int i = 0; i < n; i++)
+            {
+                if (tr == n)
+                    break;
+                if (a[i].first >= p)
+                {
+                    ans += ((n - tr) * p);
+                    break;
+                }
+                if (a[i].second >= (n - tr))
+                {
+                    ans += ((n - tr) * a[i].first);
+                    tr += (n - tr);
+                    break;
+                }
+                else if (a[i].second < (n - tr))
+                {
+                    tr += a[i].second;
+                    ans += (a[i].second * a[i].first);
+                }
+            }
+            cout << ans << nl;
         }
     }
     return 0;
